@@ -120,3 +120,7 @@ class NeuralNetwork:
         x = np.zeros(output_dim, dtype=np.int)
         x[idx] = 1
         return x
+       
+    # Update network
+    def update_nn(self, network):
+        self.network = network
